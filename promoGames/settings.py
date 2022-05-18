@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-l+3(xm9h@yz#m&etrati97+-@-w+e5222^pkf^l(3t37_rlzac"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["afternoon-stream-42339.herokuapp.com", "localhost", "127.0.0.1"]
 
 # Application definition
 
@@ -84,15 +85,22 @@ WSGI_APPLICATION = "promoGames.wsgi.application"
 #     }
 # }
 # Para rodar local com docker + postgres
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql_psycopg2",
+#         "NAME": "promogames",
+#         "USER": "promouser",
+#         "PASSWORD": "180102",
+#         "HOST": "localhost",
+#         "PORT": "5432",
+#     }
+# }
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "promogames",
-        "USER": "promouser",
-        "PASSWORD": "180102",
-        "HOST": "localhost",
-        "PORT": "5432",
-    }
+    "default": dj_database_url.config(
+        default="postgresql://localhost/promogames?user=promouser&password=180102",
+        conn_max_age=600,
+        ssl_require=not DEBUG,
+    )
 }
 
 
