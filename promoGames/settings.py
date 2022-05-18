@@ -76,10 +76,22 @@ WSGI_APPLICATION = "promoGames.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# Para rodar local com o sqlite
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+# Para rodar local com docker + postgres
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "promogames",
+        "USER": "promouser",
+        "PASSWORD": "180102",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
