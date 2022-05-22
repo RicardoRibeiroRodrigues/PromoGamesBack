@@ -12,5 +12,11 @@ O link para o deploy no heroku está disponível [aqui](https://afternoon-stream
 ## Features principais:
 - [X] Listar jogos em promoção.
 - [X] Ser possível favoritar ofertas.
+## Features adicionais:
+- [X] Menu lateral para filtrar por lojas ou por apenas ofertas favoritadas.
+- [X] Opção no menu para ordenar por título, porcentagem de desconto, por preço e pela avaliação na metacritic.
+- [X] Barra de pesquisa para pesquisar ofertas para um jogo específico.
+- [X] Tela adicional para ver detalhes do jogo como avaliação na steam e na metacritic (não são disponibilizadas para todos os jogos), pode ser visto também se houverem, lojas que estão fazendo preços melhores nesse mesmo jogo.
+- [X] Botão para redirecionar para o site ofertando o jogo.
 ## API:
 O projeto se baseia em uma API de descontos em jogos chamada **CheapShark**, [clique aqui para ver a documentação oficial](https://apidocs.cheapshark.com).
