@@ -1,6 +1,6 @@
 # Backend do projeto 2 - Aluno: Ricardo Ribeiro Rodrigues
 ## Tema do projeto: Descontos em jogos digitais.
-O backend desse projeto é uma simples REST API para implementar um sistema de favoritos no [frontend](https://github.com/insper-tecnologias-web/projeto-2-frontend-promogamesfront), onde as funcionalidades são melhores exploradas.
+O backend desse projeto é uma simples REST API para implementar um sistema de favoritos no [frontend](https://github.com/RicardoRibeiroRodrigues/PromoGamesFront), onde as funcionalidades são melhores exploradas.
 ## Feito com:
 - [![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)](https://www.django-rest-framework.org)
 - [![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
